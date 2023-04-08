@@ -2,6 +2,8 @@
 
 This is an official pnpm starter turborepo.
 
+[![Ease UI Actions](https://github.com/imtanmoy/ease-ui/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/imtanmoy/ease-ui/actions/workflows/main.yml)
+
 ## What's inside?
 
 This turborepo uses [pnpm](https://pnpm.io) as a package manager. It includes the following packages/apps:
