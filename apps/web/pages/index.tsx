@@ -1,4 +1,4 @@
-import { Button } from 'ease-ui-core';
+import { Button } from '@imtanmoy/ease-ui';
 
 export default function Web() {
   return (

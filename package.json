@@ -9,13 +9,13 @@
   ],
   "scripts": {
     "clear": "turbo run clear && rm -rf node_modules",
-    "build": "turbo run build --filter=ease-ui-core",
+    "build": "turbo run build --filter=@imtanmoy/ease-ui",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "turbo run format",
     "clean": "turbo run clean && rm -rf node_modules",
-    "storybook": "turbo run storybook --filter=ease-ui-docs --filter=ease-ui-core",
-    "web": "turbo run dev --parallel --filter=ease-ui-web --filter=ease-ui-core"
+    "storybook": "turbo run storybook --filter=ease-ui-docs --filter=@imtanmoy/ease-ui",
+    "web": "turbo run dev --parallel --filter=ease-ui-web --filter=@imtanmoy/ease-ui"
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",

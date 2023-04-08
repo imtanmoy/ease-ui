@@ -23,6 +23,9 @@ importers:
         specifier: 18.2.0
         version: registry.npmjs.org/react-dom@18.2.0(react@18.2.0)
     devDependencies:
+      '@imtanmoy/ease-ui':
+        specifier: workspace:*
+        version: link:../../packages/ease-ui-core
       '@storybook/addon-essentials':
         specifier: 7.0.2
         version: registry.npmjs.org/@storybook/addon-essentials@7.0.2(react-dom@18.2.0)(react@18.2.0)
@@ -62,9 +65,6 @@ importers:
       '@typescript-eslint/parser':
         specifier: 5.57.1
         version: registry.npmjs.org/@typescript-eslint/parser@5.57.1(eslint@8.38.0)(typescript@5.0.4)
-      ease-ui-core:
-        specifier: workspace:*
-        version: link:../../packages/ease-ui-core
       eslint:
         specifier: 8.38.0
         version: registry.npmjs.org/eslint@8.38.0
@@ -89,7 +89,7 @@ importers:
 
   apps/web:
     dependencies:
-      ease-ui-core:
+      '@imtanmoy/ease-ui':
         specifier: workspace:*
         version: link:../../packages/ease-ui-core
       next:

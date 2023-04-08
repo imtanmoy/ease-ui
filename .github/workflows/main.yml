@@ -25,6 +25,13 @@ jobs:
         with:
           ref: ${{ env.BRANCH }}
           fetch-depth: 0
+      - name: Creating .npmrc file
+        run: |
+          cp .npmrc.example .npmrc
+          sed -i "s/INSERT_YOUR_GITHUB_ACCESS_TOKEN_HERE/$NPM_TOKEN/g" .npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         id: pnpm-install
@@ -61,7 +68,14 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Build Component Library
         run: pnpm build
+
+      - name: Publish Component Library
+        run: |
+          cd packages/ease-ui-core
+          pnpm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  transpilePackages: ['ease-ui-core'],
+  transpilePackages: ['@imtanmoy/ease-ui'],
 };
