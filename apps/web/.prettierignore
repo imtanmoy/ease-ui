@@ -1,0 +1,6 @@
+CHANGELOG.md
+docs
+node_modules
+dist
+storybook-static
+.next

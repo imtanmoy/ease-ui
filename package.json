@@ -1,0 +1,30 @@
+{
+  "name": "ease-ui",
+  "version": "0.0.0",
+  "private": true,
+  "module": "true",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "clear": "turbo run clear && rm -rf node_modules",
+    "build": "turbo run build --filter=ease-ui-core",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "storybook": "turbo run storybook --filter=ease-ui-docs --filter=ease-ui-core",
+    "web": "turbo run dev --parallel --filter=ease-ui-web --filter=ease-ui-core"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "packageManager": "pnpm@7.28.0"
+}

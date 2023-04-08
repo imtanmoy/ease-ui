@@ -1,0 +1,55 @@
+{
+  "name": "ease-ui-core",
+  "version": "0.0.1",
+  "description": "A design system to use with ease",
+  "author": "Tanmoy Banik",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./styles": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clear": "rm -rf .turbo && rm -rf dist && rm -rf node_modules",
+    "clean": "rm -Rf dist",
+    "prebuild": "yarn run clean",
+    "build": "vite build",
+    "format": "prettier --write 'src/**/*.{ts,tsx,scss,css,json}'",
+    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}' --quiet --fix",
+    "dev": "vite build --watch"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@typescript-eslint/eslint-plugin": "5.57.1",
+    "@typescript-eslint/parser": "5.57.1",
+    "@vitejs/plugin-react": "3.1.0",
+    "clsx": "1.2.1",
+    "eslint": "8.38.0",
+    "eslint-config-custom": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tsconfig": "workspace:*",
+    "typescript": "4.9.3",
+    "vite": "4.2.0",
+    "vite-plugin-dts": "2.2.0",
+    "vite-tsconfig-paths": "4.0.8"
+  },
+  "peerDependencies": {
+    "react": "^18.0",
+    "react-dom": "^18.0"
+  }
+}

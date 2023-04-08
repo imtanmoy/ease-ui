@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/docs.json",
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": ["stories/**/*", ".storybook/**/*"],
+  "exclude": ["node_modules", "storybook-static"]
+}
