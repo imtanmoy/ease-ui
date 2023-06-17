@@ -14,23 +14,23 @@
   },
   "dependencies": {
     "@imtanmoy/ease-ui": "workspace:*",
-    "next": "^13.1.1",
+    "next": "^13.4.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "@typescript-eslint/eslint-plugin": "5.57.1",
-    "@typescript-eslint/parser": "5.57.1",
+    "@babel/core": "^7.22.5",
+    "@types/node": "^20.3.1",
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
+    "@typescript-eslint/eslint-plugin": "5.59.11",
+    "@typescript-eslint/parser": "5.59.11",
     "autoprefixer": "10.4.14",
-    "eslint": "7.32.0",
+    "eslint": "8.43.0",
     "eslint-config-custom": "workspace:*",
-    "postcss": "8.4.21",
-    "tailwindcss": "3.3.1",
+    "postcss": "8.4.24",
+    "tailwindcss": "3.3.2",
     "tsconfig": "workspace:*",
-    "typescript": "^4.5.3"
+    "typescript": "^5.1.3"
   }
 }
